@@ -29,7 +29,7 @@ int main()
 		StrStm << i + 1;
 		StrStm >> imageFileName;
 		imageFileName += ".jpg";
-		cv::Mat imageSrc = imread("C:\\Users\\24218\\Desktop\\image\\chess2\\" + imageFileName);
+		cv::Mat imageSrc = imread("chess\\" + imageFileName);
 		Mat image;//边界扩展后的图片
 		copyMakeBorder(imageSrc, image, (int)(y_expand / 2), (int)(y_expand / 2), (int)(x_expand / 2), (int)(x_expand / 2), BORDER_CONSTANT);
 
